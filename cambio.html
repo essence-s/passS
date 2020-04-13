@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		
+
+</head>
+<body>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.contenedor{
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.espacio{
+			display: grid;
+			grid-template-columns: repeat(2,1fr);
+			grid-gap: 15px;
+			background: rgb(28, 123, 231);
+			width: 300px;
+		}
+		.tBien{
+			text-align: center;
+			color: white;
+		}
+		@media(max-width: 900px){
+			.espacio{
+				grid-template-columns: repeat(1,1fr);
+				height: 60px;
+			}
+			.groupSecc{
+				height: 200px!important;
+			}
+			.tBien{
+				text-align: center;
+				color: rgb(37, 34, 34);
+				background: rgb(229, 233, 235);
+			}
+		}
+		
+	</style>
+
+	
+	<div class="contenedor" >
+	
+		<div class="espacio">
+		
+			<div class="groupSecc">
+					
+				<section class="secciones" style="background: rgb(116, 64, 212)">
+					
+						<button class="next">siguiente</button>
+								
+				</section>
+
+				<section class="secciones " style="background: rgb(199, 18, 72)">
+					
+						<button class="back">anterior</button>
+						<button class="next">siguiente</button>
+									
+				</section>
+
+				<section class="secciones " style="background: salmon">
+					
+						<button class="back">anterior</button>
+						<button class="next">siguiente</button>
+				</section>
+
+				<section class="secciones " style="background: rgb(8, 212, 151)">
+					
+						<button class="back">anterior</button>
+						
+					
+				</section>
+		
+		
+			</div>
+
+
+			<div class="tBien">
+				<h1>\:v/ todo BIEN</h1>
+			</div>
+
+		</div>
+
+
+	</div>
+
+	<script type="text/javascript" src="js/passS.js"></script>
+
+
+	<script>
+
+
+
+		passC('.groupSecc',true);
+
+		
+
+		
+	</script>
+</body>
+</html>
