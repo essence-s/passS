@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<link rel="stylesheet" href="source/passS/css/passS.css">
 		
 
 </head>
@@ -13,6 +13,7 @@
 		body{
 			margin: 0;
 			padding: 0;
+			font-family:Cambria,cursive;
 		}
 		.contenedor{
 			width: 100%;
@@ -25,60 +26,82 @@
 			display: grid;
 			grid-template-columns: repeat(2,1fr);
 			grid-gap: 15px;
-			background: rgb(28, 123, 231);
-			width: 300px;
+			background: #f0f0f4;
+			/* width: 100px; */
+			padding: 36px;
+		}
+		.groupSecc{
+			height:100%;
+			/* width: 140px; */
 		}
 		.tBien{
 			text-align: center;
-			color: white;
+			color: rgb(46, 46, 50);
+			border-radius: 3px;
+			background: rgb(208, 220, 226);
+
+		}
+		.contenidoEjemplo{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			
 		}
 		@media(max-width: 900px){
 			.espacio{
 				grid-template-columns: repeat(1,1fr);
-				height: 60px;
+				
 			}
 			.groupSecc{
-				height: 200px!important;
+				/* height: 150px; */
 			}
 			.tBien{
 				text-align: center;
-				color: rgb(37, 34, 34);
-				background: rgb(229, 233, 235);
+				
+			}
+			.back{
+				margin-right: 4px;
 			}
 		}
 		
 	</style>
 
 	
-	<div class="contenedor" >
-	
-		<div class="espacio">
-		
+<div><div>
 			<div class="groupSecc">
 					
-				<section class="secciones" style="background: rgb(116, 64, 212)">
+				<section class="secciones" style="background: rgb(116, 64, 212);">
 					
+					<div class="contenidoEjemplo" id="sss">
+						
+
 						<button class="next">siguiente</button>
-								
+					</div>
+				
+
 				</section>
 
 				<section class="secciones " style="background: rgb(199, 18, 72)">
-					
+						<div class="contenidoEjemplo">
+							dasdadadasdds asdad sdasds sadsa
 						<button class="back">anterior</button>
 						<button class="next">siguiente</button>
-									
+						</div>			
 				</section>
 
 				<section class="secciones " style="background: salmon">
-					
+						<div class="contenidoEjemplo">
 						<button class="back">anterior</button>
 						<button class="next">siguiente</button>
+						</div>
 				</section>
 
 				<section class="secciones " style="background: rgb(8, 212, 151)">
-					
+						<div class="contenidoEjemplo">
 						<button class="back">anterior</button>
-						
+						</div>
 					
 				</section>
 		
@@ -86,23 +109,32 @@
 			</div>
 
 
-			<div class="tBien">
-				<h1>\:v/ todo BIEN</h1>
 			</div>
-
 		</div>
 
+	<section class=" " style="background: rgb(199, 18, 72)">
+		<div class="contenidoEjemplo">
+		<button class="back">anterior</button>
+		<button class="next">siguiente</button>
+		</div>			
+	</section>
 
+	<div id="ididid"  cols="29" rows="10" style="margin: 90px">
 	</div>
 
-	<script type="text/javascript" src="source/js/passS.js"></script>
+
+
+
+	
+
+	<script type="text/javascript" src="source/passS/js/passS.js"></script>
 
 
 	<script>
 
 
 
-		passC('.groupSecc',true);
+		passC('.groupSecc');
 
 		
 
